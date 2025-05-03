@@ -1,48 +1,175 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
-### REGISTER NUMBER : 
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
+### DATE:03/05/2025                                                                          
+### REGISTER NUMBER : 212222040145
+### Aim : 
 
-### Algorithm:  1. Direct Instruction Prompts
-Objective: Guide the chatbot to respond concisely to customer inquiries.
-Prompt Pattern:
-Prompt: "When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
-2. Contextual Prompting
-Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
-Prompt Pattern:
-Prompt: "If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
-3. Persona-Based Prompting
-Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
-Prompt Pattern:
-Prompt: "Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
-4. Few-Shot Prompting
-Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
-Prompt Pattern:
-Prompt: "Here are some examples of how to handle technical questions:
-'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
-'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
-Now, respond to: 'My app keeps crashing.'"
-5. Chain of Thought Prompting
-Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
-Prompt Pattern:
-Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
-Ask if they are using the laptop on a soft surface.
-Suggest moving the laptop to a flat, hard surface for better airflow.
-Ask if they’ve cleaned the vents recently.
-Recommend restarting the device to see if the issue persists.
-Now, solve: 'My laptop fan is making a loud noise.'"
-6. Instruction with Constraints
-Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
-Prompt Pattern:
-Prompt: "Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
-7. Reflective Prompting
-Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
-Prompt Pattern:
-Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
-Result: The various types of Prompts are executed successfully.
+Designing an AI-Powered Chatbot for Customer Support / Investigating the day-today weather in the locality.
+
+### Objective:
+The goal of this experiment is to design and develop an AI-powered weather monitoring system that collects, analyzes, and reports daily weather conditions in a specific locality. The system will use diverse prompting techniques—including scenario-based, straightforward, tabular, and preceding question prompting—for data gathering, prediction modeling, report generation, and user communication.
+### AI Tools Used:
+AI Development Platforms: OpenAI API for natural language processing (NLP) and weather report summarization.
+Data Collection Tools: Weather APIs (OpenWeatherMap API), Google Sheets for data logging.
+Programming Environment: Python for weather data retrieval, processing, and visualization.
+Evaluation Tools: Metrics such as Mean Squared Error (MSE), R-Squared Score (R²), and graphical comparison of predicted vs actual weather parameters.
+### PROCEDURE:
+A systematic approach leveraging diverse prompting techniques is employed to ensure robust design, user-centered workflows, and accurate, actionable weather insights.
+
+1. Introduction
+Objective:
+Build a responsive, intelligent system that provides real-time, localized weather information for daily use.
+
+Importance of Scenario-Based Prompting:
+Using a combination of scenario-based, straightforward, tabular format, and preceding question prompting techniques enhances precision, anticipation of user needs, and robust system resilience.
+2. Project Overview
+Use Case Selection:
+Local weather investigation for decision-making across sectors such as agriculture, tourism, education, and event planning.
+Scope:
+Real-time data retrieval.
+Short-term (hourly) and long-term (weekly) forecasting.
+Customizable user notifications.
+Data visualization and user trend reports.
+3. Prompting Techniques for Each Stage of the Design Process
+Stage 1: Requirement Gathering and User Needs Assessment
+User Scenario Prompting:
+"Imagine you are a parent planning a weekend outing. What weather details would you check before leaving?"
+Goal:
+Capture real-world dependencies on weather such as temperature, UV index, wind speed, and rain probability.
+Straightforward Prompting:
+"List the 3 most important weather details needed daily."
+Goal:
+Obtain crisp, prioritized information (e.g., temperature, precipitation, humidity).
+Tabular Format Prompting:
+User Type	Weather Data Needed	Purpose
+Farmer	Rain prediction, humidity	Irrigation scheduling
+Student	Temperature, wind speed	Daily commute planning
+Tourist	UV index, rainfall chances	Outdoor activity planning
+
+Goal:
+Identify specific weather parameters based on user profiles.
+Preceding Question Prompting:
+"Before checking the detailed forecast, what general weather conditions do you want to know first?"
+Goal:
+Define information hierarchy for quick app navigation.
+Stage 2: System Design and Architecture
+Technical Scenarios for Component Design:
+"Suggest an optimal backend structure that can fetch weather data every 15 minutes without overwhelming the server."
+Goal:
+Establish a lightweight, scalable architecture using scheduled data pulls and serverless functions.
+Straightforward Prompting:
+"What are the 5 core modules needed for a weather monitoring system?"
+Goal:
+Ensure comprehensive module coverage (data retrieval, storage, processing, visualization, notification).
+Tabular Format Prompting:
+Module Name	Functionality	Technology Stack
+Data Fetcher	Retrieve live weather API data	Python + REST APIs
+Database Manager	Store historical data	PostgreSQL/SQLite
+Predictor Engine	Forecast using ML models	Scikit-learn / TensorFlow
+UI/UX Interface	Display real-time weather info	React Native
+Alert Manager	Send severe weather notifications	Firebase Cloud Messaging
+
+Goal:
+Clarify technical blueprint and roles of each component.
+
+
+Preceding Question Prompting:
+"Before deciding the database type, what factors (e.g., speed, storage, scalability) should be considered?"
+Goal:
+Prioritize system attributes based on operational requirements.
+Stage 3: Prototype Development
+Scenario-Based Workflow Prompts:
+"A user opens the app at 7 AM wanting today's rain prediction. Sketch the minimum steps needed."
+Goal:
+Map fast, intuitive user pathways.
+Straightforward Prompting:
+"List steps for viewing the 7-day forecast."
+Goal:
+Standardize workflow: Home → 7-day forecast → Day Details.
+Tabular Format Prompting:
+Step No.	Action	Expected Outcome
+1	Open App	Display Home Screen
+2	Tap '7-Day Forecast' Button	Weekly forecast shown
+3	Select a specific date	Detailed weather for that day
+
+Goal:
+Visualize user journey stages.
+Preceding Question Prompting:
+"Before presenting the full forecast, should the app show a weather summary for today?"
+Goal:
+Decide on pre-summary before deep-dive forecasts.
 
 
 
+Stage 4: Testing and Iteration
+Stress Testing and Edge Case Prompts:
+"What happens if 5,000 users simultaneously request severe storm alerts?"
+Goal:
+Test system under extreme demand scenarios.
+Straightforward Prompting:
+"Name 3 common failure points during bad weather API fetches."
+Goal:
+Prepare for network downtime, API limit exceedance, and server crashes.
+Tabular Format Prompting:
+Potential Issue	Mitigation Strategy
+API Downtime	Local caching + Retry Mechanism
+Network Failure	Push local last-updated data
+Load Spike	Implement Auto-scaling via AWS/GCP
 
-# Result: Thus the Prompts were exected succcessfully .
+Goal:
+Build robust contingency measures.
+
+Preceding Question Prompting:
+"Before a user complains about outdated weather data, what fallback mechanisms should be activated?"
+Goal:
+Improve user trust and system reliability.
+
+Stage 5: Deployment and Continuous Improvement
+Real-World Scenario Prompts:
+"A sudden heatwave is expected next week. How should the system update users?"
+
+Goal:
+Enable timely, clear, and non-intrusive user alerts.
+Straightforward Prompting:
+"Mention 4 ways the app can keep growing user base post-deployment."
+Goal:
+Focus on engagement strategies: gamification, rewards, personalized alerts, social sharing.
+Tabular Format Prompting:
+Growth Strategy	Implementation Example
+Gamification	Reward badges for daily usage
+Social Sharing	"Share Today’s Forecast" option
+Personalized Forecasts	Custom notification settings
+Community Feedback Loop	In-app surveys
+
+Goal:
+Sustain user interest and growth.
+Preceding Question Prompting:
+"Before launching to new regions, what local weather differences must the app account for?"
+Goal:
+Prepare for regional variations (e.g., monsoon alerts vs snowstorm warnings).
+
+4. Evaluation of Prompt Effectiveness in Design
+Accuracy and Specificity:
+Straightforward, scenario-based, and tabular prompts enabled detailed identification of technical and user requirements.
+Adaptability to User Needs:
+Preceding question prompts helped anticipate dynamic user behaviors and environmental factors.
+
+Flexibility in Design Adjustments:
+The structured prompting strategies allowed agile modifications in prototype and system architecture.
+5. Conclusion and Recommendations
+Summary:
+Scenario-based, straightforward, tabular, and preceding question prompting approaches collectively strengthened the system design, improving forecast accuracy, user experience, and operational robustness.
+Best Practices for Prompting:
+Combine straightforward prompts for clarity.
+Use tabular prompts for systematic requirement breakdown.
+Apply preceding question prompts to anticipate next logical user/system actions.
+
+### Future Prospects:
+Future enhancements can include adaptive prompting models to further improve weather prediction and user interaction strategies.
+Evaluation Metrics Used:
+Mean Squared Error (MSE): Measuring prediction error.
+R-Squared Score (R²): Evaluating the goodness of fit.
+Visualization:
+Comparison graphs showing predicted vs actual temperature, humidity, and precipitation for visual model validation.
+### RESULT:
+Thus, the experiment on Scenario-Based Report Development Utilizing Diverse Prompting Techniques—including straightforward, tabular, and preceding question prompting—demonstrates the significant positive impact on system design quality, user-centricity, prediction accuracy, and overall solution robustness for real-world weather monitoring applications.
 
